@@ -9,11 +9,10 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     
-    // MARK: - UI Companents
     private let headerView = AuthHeaderView(titleLabel: Constant.logTitle,
                                             subTitleLabel: Constant.logSubTitle)
     
-    private let userNameField = CustomTextField(authFieldType: .userName)
+    private let emailField = CustomTextField(authFieldType: .email)
     private let passwordField = CustomTextField(authFieldType: .password)
     private let signInButton = CustomButton(title: Constant.singInButton,
                                             hasBackground: true,
@@ -40,9 +39,9 @@ final class LoginViewController: UIViewController {
     // MARK: - Selectors
     
     @objc func didTapSignIn() {
-        let vc = HomeViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        let nav = UINavigationController(rootViewController: HomeViewController())
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true)
     }
     
     @objc func didTapNewUser() {
@@ -62,7 +61,7 @@ extension LoginViewController {
     
     private func addSubviews() {
         view.backgroundColor = .white
-        [headerView, userNameField, passwordField,
+        [headerView, emailField, passwordField,
          signInButton, newUserButton, forgotButton].forEach {view.addViewsTAMIC($0)}
     }
     
@@ -74,13 +73,13 @@ extension LoginViewController {
             headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             headerView.heightAnchor.constraint(equalToConstant: 240),
             
-            userNameField.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 12),
-            userNameField.centerXAnchor.constraint(equalTo: headerView.centerXAnchor),
-            userNameField.heightAnchor.constraint(equalToConstant: 55),
-            userNameField.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85),
+            emailField.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 12),
+            emailField.centerXAnchor.constraint(equalTo: headerView.centerXAnchor),
+            emailField.heightAnchor.constraint(equalToConstant: 55),
+            emailField.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85),
             
-            passwordField.topAnchor.constraint(equalTo: userNameField.bottomAnchor, constant: 12),
-            passwordField.centerXAnchor.constraint(equalTo: userNameField.centerXAnchor),
+            passwordField.topAnchor.constraint(equalTo: emailField.bottomAnchor, constant: 12),
+            passwordField.centerXAnchor.constraint(equalTo: emailField.centerXAnchor),
             passwordField.heightAnchor.constraint(equalToConstant: 55),
             passwordField.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85),
             
@@ -97,7 +96,7 @@ extension LoginViewController {
             forgotButton.topAnchor.constraint(equalTo: newUserButton.bottomAnchor, constant: 5),
             forgotButton.centerXAnchor.constraint(equalTo: newUserButton.centerXAnchor),
             forgotButton.heightAnchor.constraint(equalToConstant: 30),
-            forgotButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85),
+            forgotButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85)
         ])
     }
 }

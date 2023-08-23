@@ -9,7 +9,6 @@ import UIKit
 
 final class RegisterViewController: UIViewController {
     
-    // MARK: - UI Companents
     private let headerView = AuthHeaderView(titleLabel: Constant.logRegisterTitle,
                                             subTitleLabel: Constant.logSubRegisterTitle)
     
@@ -23,17 +22,22 @@ final class RegisterViewController: UIViewController {
     private let signInButton = CustomButton(title: Constant.signInButtonRegister, fontSize: .medium)
     
     private let termsTextView: UITextView = {
+        let attributedString = NSMutableAttributedString(string: Constant.registerTextView)
+        attributedString.addAttribute(.link, value: "terms://termsAndConditions", range: (attributedString.string as NSString).range(of: "Terms & Conditions"))
+        attributedString.addAttribute(.link, value: "privacy://privacyPolicy", range: (attributedString.string as NSString).range(of: "Privacy Policy"))
         let textView = UITextView()
-        textView.text = Constant.registerTextView
+        textView.linkTextAttributes = [.foregroundColor: UIColor.systemBlue]
+        textView.attributedText = attributedString
         textView.backgroundColor = .clear
         textView.textColor = .label
         textView.isSelectable = true
         textView.isEditable = false
         textView.isScrollEnabled = false
+        textView.delaysContentTouches = false
         textView.textAlignment = .center
         return textView
     }()
-
+    
     // MARK: - LifeCycle
     
     override func viewDidLoad() {
@@ -43,6 +47,8 @@ final class RegisterViewController: UIViewController {
         addSubviews()
         setConstraints()
         
+        termsTextView.delegate = self
+        
         singUpButton.addTarget(self, action: #selector(didTapSignUp), for: .touchUpInside)
         signInButton.addTarget(self, action: #selector(didTapSignIn), for: .touchUpInside)
     }
@@ -51,12 +57,39 @@ final class RegisterViewController: UIViewController {
     
     @objc func didTapSignIn() {
         navigationController?.popViewController(animated: true)
-        ///// dasda da
     }
     
     @objc func didTapSignUp() {
     }
 }
+
+// MARK: - UITextViewDelegate
+
+extension RegisterViewController: UITextViewDelegate {
+    
+    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+        if URL.scheme == "terms" {
+            showWebViewController(with: Url.terms)
+        } else if URL.scheme == "privacy" {
+            showWebViewController(with: Url.privacy)
+        }
+        
+        func showWebViewController(with urlString: String) {
+            let vc = WebViewController(with: urlString)
+            let nav = UINavigationController(rootViewController: vc)
+            present(nav, animated: true)
+        }
+        
+        return true
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        textView.delegate = nil
+        textView.selectedTextRange = nil
+        textView.delegate = self
+    }
+}
+
 // MARK: - Set constraints / Add subviews
 
 extension RegisterViewController {
@@ -103,7 +136,7 @@ extension RegisterViewController {
             signInButton.topAnchor.constraint(equalTo: termsTextView.bottomAnchor, constant: 10),
             signInButton.centerXAnchor.constraint(equalTo: termsTextView.centerXAnchor),
             signInButton.heightAnchor.constraint(equalToConstant: 55),
-            signInButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85),
+            signInButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85)
         ])
     }
 }
