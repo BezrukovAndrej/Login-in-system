@@ -29,9 +29,9 @@ final class CustomButton: UIButton {
         case .big:
             titleLabel?.font = .systemFont(ofSize: 22, weight: .bold)
         case .medium:
-            titleLabel?.font = .systemFont(ofSize: 18, weight: .bold)
+            titleLabel?.font = .systemFont(ofSize: 15, weight: .bold)
         case .small:
-            titleLabel?.font = .systemFont(ofSize: 15, weight: .regular)
+            titleLabel?.font = .systemFont(ofSize: 12, weight: .regular)
         }
     }
     

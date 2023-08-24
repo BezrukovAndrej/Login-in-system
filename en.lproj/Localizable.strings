@@ -6,38 +6,73 @@
   
 */
 
+// Registration text
+"singIntext" = "Sign In";
 
-"Sign In"
-"Sign in to your account"
-"Username"
-"Email Address"
-"Password"
-"Sign In"
-"New User? Create Account."
-"Forgot Password?"
-"Sing Up"
-"Greate your account"
-"Already have an account? Sign In."
-                """
-                By creating an account,you agree to our Terms & Conditions
-                and you acknowledge that you have read our Privacy Policy.
-                """
-"Done"
-"Forgot Password"
-"Reset your password"
-"Loading..."
-"Logout"
-"Dismiss"
-"Invalid Email"
-"Please enter a valid email"
-"Invalid Password"
-"Please enter a valid password"
-"Invalid Username"
-"Please enter a valid username"
-"Unknown Registration Error"
-"Error Singing In"
-"Log Out Error"
-"Error Sending Password"
-"Password Reset Sent"
-"Error Fetchin User"
-"Unknown Error Fetching User"
+// Subtext to enter into the system
+"subText" = "Sign in to your account";
+
+// Text in textfield
+"textFieldtextname" = "Username";
+"textFieldtextandress" = "Email Address";
+"textFieldtextpass" = "Password";
+
+// Login button
+"buttonIn" = "Sign In";
+
+// Button to create an account
+"createAccount" = "New User? Create Account.";
+
+// Button if you forgot your password
+"forgotPassword" = "Forgot Password?";
+
+// Send password button
+"sendPassword" = "Send password";
+
+// Registration text
+"singUptext" = "Sing Up";
+
+// Subtext for registration
+"subTextUp" = "Create your account";
+
+// Button to go to the login screen
+"alreadyHaveAcc" = "Already have an account? Sign In.";
+
+// Text of the privacy policy and terms of use
+"policyAndConditionsText" = "By creating an account,you agree to our Terms & Conditions and you acknowledge that you have read our Privacy Policy.";
+
+// Button when entering website
+"webButton" = "Done";
+
+// Text forgot password
+"forgottext" = "Forgot Password";
+
+// Subtext forgot password
+"subTextForgot" = "Reset your password";
+
+// Login text
+"accauntVc" = "Loading...";
+
+// Logout button
+"outLog" = "Logout";
+
+// Terms of Use and Privacy Policy Buttons
+"termsAndcondtions" = "Terms & Conditions";
+"privacyPolicy" = "Privacy Policy";
+
+
+// Alert text
+"alertButton" = "Dismiss";
+"alertErrorEmail" = "Invalid Email";
+"alertValidEmail" = "Please enter a valid email";
+"alertInvalidPass" = "Invalid Password";
+"alertValidPass" = "Please enter a valid password";
+"alertInvalidUser" = "Invalid Username";
+"alertEnterValidUser" = "Please enter a valid username";
+"alertUnknownRegError" = "Unknown Registration Error";
+"alertErrorSingIn" = "Error Signing In";
+"alertLogOut" = "Log Out Error";
+"alertErrorSendPass" = "Error Sending Password";
+"alertPassResSent" = "Password Reset Sent";
+"alertErrorFetch" = "Error Fetching User";
+"alertUnknownErrorUser" = "Unknown Error Fetching User";

@@ -1,0 +1,64 @@
+Target dependency graph (20 targets)
+BoringSSL-GRPC in Pods, no dependencies
+FirebaseAppCheckInterop in Pods, no dependencies
+PromisesObjC in Pods, no dependencies
+GoogleUtilities in Pods, depends on:
+PromisesObjC in Pods (explicit)
+FirebaseCoreInternal in Pods, depends on:
+GoogleUtilities in Pods (explicit)
+FirebaseCore in Pods, depends on:
+FirebaseCoreInternal in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+GTMSessionFetcher in Pods, no dependencies
+RecaptchaInterop in Pods, no dependencies
+FirebaseAuth in Pods, depends on:
+FirebaseAppCheckInterop in Pods (explicit)
+FirebaseCore in Pods (explicit)
+GTMSessionFetcher in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+RecaptchaInterop in Pods (explicit)
+FirebaseAuthInterop in Pods, no dependencies
+FirebaseCoreExtension in Pods, depends on:
+FirebaseCore in Pods (explicit)
+abseil in Pods, no dependencies
+gRPC-C++-gRPCCertificates-Cpp in Pods, no dependencies
+gRPC-Core in Pods, depends on:
+BoringSSL-GRPC in Pods (explicit)
+abseil in Pods (explicit)
+gRPC-C++ in Pods, depends on:
+abseil in Pods (explicit)
+gRPC-C++-gRPCCertificates-Cpp in Pods (explicit)
+gRPC-Core in Pods (explicit)
+leveldb-library in Pods, no dependencies
+nanopb in Pods, no dependencies
+FirebaseFirestore in Pods, depends on:
+FirebaseCore in Pods (explicit)
+abseil in Pods (explicit)
+gRPC-C++ in Pods (explicit)
+leveldb-library in Pods (explicit)
+nanopb in Pods (explicit)
+FirebaseStorage in Pods, depends on:
+FirebaseAppCheckInterop in Pods (explicit)
+FirebaseAuthInterop in Pods (explicit)
+FirebaseCore in Pods (explicit)
+FirebaseCoreExtension in Pods (explicit)
+GTMSessionFetcher in Pods (explicit)
+Pods-Login in system in Pods, depends on:
+BoringSSL-GRPC in Pods (explicit)
+FirebaseAppCheckInterop in Pods (explicit)
+FirebaseAuth in Pods (explicit)
+FirebaseAuthInterop in Pods (explicit)
+FirebaseCore in Pods (explicit)
+FirebaseCoreExtension in Pods (explicit)
+FirebaseCoreInternal in Pods (explicit)
+FirebaseFirestore in Pods (explicit)
+FirebaseStorage in Pods (explicit)
+GTMSessionFetcher in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+PromisesObjC in Pods (explicit)
+RecaptchaInterop in Pods (explicit)
+abseil in Pods (explicit)
+gRPC-C++ in Pods (explicit)
+gRPC-Core in Pods (explicit)
+leveldb-library in Pods (explicit)
+nanopb in Pods (explicit)

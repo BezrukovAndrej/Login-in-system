@@ -6,38 +6,74 @@
   
 */
 
+// Registration text
+"singIntext" = "Войти";
 
-"Sign In"
-"Sign in to your account"
-"Username"
-"Email Address"
-"Password"
-"Sign In"
-"New User? Create Account."
-"Forgot Password?"
-"Sing Up"
-"Greate your account"
-"Already have an account? Sign In."
-                """
-                By creating an account,you agree to our Terms & Conditions
-                and you acknowledge that you have read our Privacy Policy.
-                """
-"Done"
-"Forgot Password"
-"Reset your password"
-"Loading..."
-"Logout"
-"Dismiss"
-"Invalid Email"
-"Please enter a valid email"
-"Invalid Password"
-"Please enter a valid password"
-"Invalid Username"
-"Please enter a valid username"
-"Unknown Registration Error"
-"Error Singing In"
-"Log Out Error"
-"Error Sending Password"
-"Password Reset Sent"
-"Error Fetchin User"
-"Unknown Error Fetching User"
+// Subtext to enter into the system
+"subText" = "Войдите в свой аккаунт";
+
+// Text in textfield
+"textFieldtextname" = "Имя пользователя";
+"textFieldtextandress" = "Адрес электронной почты";
+"textFieldtextpass" = "Пароль";
+
+// Login button
+"buttonIn" = "Войти";
+
+// Button to create an account
+"createAccount" = "Новый пользователь? Зарегистрироваться.";
+
+// Button if you forgot your password
+"forgotPassword" = "Забыли пароль?";
+
+// Send password button
+"sendPassword" = "Отправить пароль";
+
+// Registration text
+"singUptext" = "Зарегистрироваться";
+
+// Subtext for registration
+"subTextUp" = "Создать аккаунт";
+
+// Button to go to the login screen
+"alreadyHaveAcc" = "У вас уже есть аккаунт? Войти.";
+
+// Text of the privacy policy and terms of use
+"policyAndConditionsText" = "Создавая учетную запись, вы соглашаетесь с нашими Условиями использования и вы подтверждаете, что прочитали нашу Политику конфиденциальности.";
+
+// Button when entering website
+"webButton" = "Готово";
+
+// Text forgot password
+"forgottext" = "Забыли пароль";
+
+// Subtext forgot password
+"subTextForgot" = "Сбросить пароль";
+
+// Login text
+"accauntVc" = "Загрузка...";
+
+// Logout button
+"outLog" = "Выйти";
+
+// Terms of Use and Privacy Policy Buttons
+"termsAndcondtions" = "Условиями использования";
+"privacyPolicy" = "Политику конфиденциальности";
+
+
+
+// Alert text
+"alertButton" = "Пропустить";
+"alertErrorEmail" = "Неправильная почта";
+"alertValidEmail" = "Введите, пожалуйста, действительный адрес электронной почты";
+"alertInvalidPass" = "Неверный пароль";
+"alertValidPass" = "Пожалуйста, введите правильный пароль";
+"alertInvalidUser" = "Неверное имя пользователя";
+"alertEnterValidUser" = "Пожалуйста введите действительное имя пользователя";
+"alertUnknownRegError" = "Неизвестная ошибка регистрации";
+"alertErrorSingIn" = "Ошибка входа в систему";
+"alertLogOut" = "Ошибка выхода из системы";
+"alertErrorSendPass" = "Ошибка отправки пароля";
+"alertPassResSent" = "Сброс пароля отправлен";
+"alertErrorFetch" = "Ошибка при получении пользователя";
+"alertUnknownErrorUser" = "Неизвестная ошибка при получении пользователя";

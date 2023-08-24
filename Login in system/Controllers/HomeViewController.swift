@@ -35,12 +35,20 @@ final class HomeViewController: UIViewController {
     }
     
     // MARK: - Selector
-
+    
     @objc func didTapLogout() {
-        dismiss(animated: true)
+        AuthService.shared.signOut { [weak self] error in
+            guard let self = self else { return }
+            if let error = error {
+                AlertManager.showLogoutError(on: self, with: error)
+                return
+            }
+            if let sceneDelegate = view.window?.windowScene?.delegate as? SceneDelegate {
+                sceneDelegate.checkAuthentication()
+            }
+        }
     }
 }
-
 // MARK: - Set constraints / Add subviews
 
 extension HomeViewController {

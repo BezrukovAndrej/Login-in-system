@@ -13,10 +13,10 @@ class ForgotPasswordController: UIViewController {
                                             subTitleLabel: Constant.subForgotPassword)
     
     private let emailField = CustomTextField(authFieldType: .email)
-    private let resetPasswordButton = CustomButton(title: Constant.logRegisterTitle,
+    private let resetPasswordButton = CustomButton(title: Constant.sendPassword,
                                                    hasBackground: true,
                                                    fontSize: .big)
-
+    
     // MARK: - LifeCycle
     
     override func viewDidLoad() {
@@ -30,10 +30,23 @@ class ForgotPasswordController: UIViewController {
     }
     
     // MARK: - Selector
-
+    
     @objc func didTapForgotButton() {
-        guard let email = emailField.text, !email.isEmpty else { return }
-        // TODO: Email validation
+        let email = emailField.text ?? ""
+        
+        if !Validation.isValidEmail(for: email) {
+            AlertManager.showInvalidEmailAlert(on: self)
+            return
+        }
+        
+        AuthService.shared.forgotPassword(with: email) { [weak self] error in
+            guard let self = self else { return }
+            if let error = error {
+                AlertManager.showErrorSendingPasswordReset(on: self, with: error)
+                return
+            }
+            AlertManager.showPasswordResetSent(on: self)
+        }
     }
 }
 
@@ -49,7 +62,7 @@ extension ForgotPasswordController {
     private func setConstraints() {
         
         NSLayoutConstraint.activate([
-            headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
+            headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             headerView.heightAnchor.constraint(equalToConstant: 230),

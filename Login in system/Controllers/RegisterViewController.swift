@@ -23,8 +23,8 @@ final class RegisterViewController: UIViewController {
     
     private let termsTextView: UITextView = {
         let attributedString = NSMutableAttributedString(string: Constant.registerTextView)
-        attributedString.addAttribute(.link, value: "terms://termsAndConditions", range: (attributedString.string as NSString).range(of: "Terms & Conditions"))
-        attributedString.addAttribute(.link, value: "privacy://privacyPolicy", range: (attributedString.string as NSString).range(of: "Privacy Policy"))
+        attributedString.addAttribute(.link, value: "terms://termsAndConditions", range: (attributedString.string as NSString).range(of: Constant.termsAndcondtions))
+        attributedString.addAttribute(.link, value: "privacy://privacyPolicy", range: (attributedString.string as NSString).range(of: Constant.privacyPolicy))
         let textView = UITextView()
         textView.linkTextAttributes = [.foregroundColor: UIColor.systemBlue]
         textView.attributedText = attributedString
@@ -60,6 +60,41 @@ final class RegisterViewController: UIViewController {
     }
     
     @objc func didTapSignUp() {
+        let registerUserRequest = RegisterUserRequest(
+            username: userNameField.text ?? "",
+            email: emailField.text ?? "",
+            password: passwordField.text ?? ""
+        )
+        
+        if !Validation.isValidUserName(for: registerUserRequest.username) {
+            AlertManager.showInvalidUsernameAlert(on: self)
+            return
+        }
+        
+        if !Validation.isValidEmail(for: registerUserRequest.email) {
+            AlertManager.showInvalidEmailAlert(on: self)
+            return
+        }
+        
+        if !Validation.isPasswordValid(for: registerUserRequest.password) {
+            AlertManager.showInvalidPasswordAlert(on: self)
+            return
+        }
+        
+        AuthService.shared.registerUser(with: registerUserRequest) { [weak self] wasRegistered, error in
+            guard let self = self else { return }
+            if let error = error {
+                AlertManager.showRegisterErrorAlert(on: self, with: error)
+            }
+            
+            if wasRegistered {
+                if let sceneDelegate = self.view.window?.windowScene?.delegate as? SceneDelegate {
+                    sceneDelegate.checkAuthentication()
+                }
+            } else {
+                AlertManager.showRegisterErrorAlert(on: self)
+            }
+        }
     }
 }
 
@@ -130,8 +165,8 @@ extension RegisterViewController {
             singUpButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85),
             
             termsTextView.topAnchor.constraint(equalTo: singUpButton.bottomAnchor, constant: 5),
-            termsTextView.centerXAnchor.constraint(equalTo: singUpButton.centerXAnchor),
-            termsTextView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85),
+            termsTextView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
+            termsTextView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25),
             
             signInButton.topAnchor.constraint(equalTo: termsTextView.bottomAnchor, constant: 10),
             signInButton.centerXAnchor.constraint(equalTo: termsTextView.centerXAnchor),

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D5F2D72521C68F3728E31E3 /* Pods_Login_in_system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E385BB3A4A95FA49A4B5917 /* Pods_Login_in_system.framework */; };
+		910BDC082A95E3FB00D2764B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910BDC072A95E3FB00D2764B /* WebViewController.swift */; };
+		910BDC0B2A96063B00D2764B /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910BDC0A2A96063B00D2764B /* AlertManager.swift */; };
+		910BDC462A9652F000D2764B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910BDC452A9652F000D2764B /* AuthService.swift */; };
+		910BDC492A96546500D2764B /* RegisterUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910BDC482A96546500D2764B /* RegisterUserRequest.swift */; };
+		917F34E42A97432500B63AFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 917F34E32A97432500B63AFA /* GoogleService-Info.plist */; };
+		917F34E62A97488800B63AFA /* LoginUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917F34E52A97488800B63AFA /* LoginUserRequest.swift */; };
+		917F34EA2A97577A00B63AFA /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917F34E92A97577A00B63AFA /* Validation.swift */; };
+		917F34EF2A9772AE00B63AFA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 917F34F12A9772AE00B63AFA /* Localizable.strings */; };
 		919607142A93B62F00914C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919607132A93B62F00914C0F /* AppDelegate.swift */; };
 		919607162A93B62F00914C0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919607152A93B62F00914C0F /* SceneDelegate.swift */; };
 		9196071D2A93B63200914C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9196071C2A93B63200914C0F /* Assets.xcassets */; };
@@ -23,6 +32,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4958920A47ED3FB1B7F21A86 /* Pods-Login in system.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login in system.release.xcconfig"; path = "Target Support Files/Pods-Login in system/Pods-Login in system.release.xcconfig"; sourceTree = "<group>"; };
+		910BDC072A95E3FB00D2764B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		910BDC0A2A96063B00D2764B /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		910BDC452A9652F000D2764B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = "../New Group/AuthService.swift"; sourceTree = "<group>"; };
+		910BDC482A96546500D2764B /* RegisterUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserRequest.swift; sourceTree = "<group>"; };
+		917F34E32A97432500B63AFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		917F34E52A97488800B63AFA /* LoginUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserRequest.swift; sourceTree = "<group>"; };
+		917F34E92A97577A00B63AFA /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		917F34EE2A97726E00B63AFA /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		917F34F02A9772AE00B63AFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		917F34F22A9772B500B63AFA /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		919607102A93B62F00914C0F /* Login in system.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Login in system.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		919607132A93B62F00914C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		919607152A93B62F00914C0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +58,8 @@
 		91F055352A94EB2500F54C3D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		91F055372A950B7E00F54C3D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		91F0553A2A95174C00F54C3D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		9E385BB3A4A95FA49A4B5917 /* Pods_Login_in_system.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Login_in_system.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C77BFFA98D5AC51F15A21BED /* Pods-Login in system.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login in system.debug.xcconfig"; path = "Target Support Files/Pods-Login in system/Pods-Login in system.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +67,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D5F2D72521C68F3728E31E3 /* Pods_Login_in_system.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		024DEAAB499D2E5A6537EF92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C77BFFA98D5AC51F15A21BED /* Pods-Login in system.debug.xcconfig */,
+				4958920A47ED3FB1B7F21A86 /* Pods-Login in system.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		910BDC092A96056E00D2764B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				919607292A93B97400914C0F /* HomeViewController.swift */,
+				9196072D2A93B9DB00914C0F /* RegisterViewController.swift */,
+				9196072B2A93B9C300914C0F /* LoginViewController.swift */,
+				9196072F2A93BA0A00914C0F /* ForgotPasswordController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		910BDC472A9653D700D2764B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				917F34E52A97488800B63AFA /* LoginUserRequest.swift */,
+				910BDC482A96546500D2764B /* RegisterUserRequest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		917F34EB2A976BB600B63AFA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				917F34E92A97577A00B63AFA /* Validation.swift */,
+				910BDC452A9652F000D2764B /* AuthService.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		919607072A93B62F00914C0F = {
 			isa = PBXGroup;
 			children = (
+				917F34F12A9772AE00B63AFA /* Localizable.strings */,
 				919607122A93B62F00914C0F /* Login in system */,
 				919607112A93B62F00914C0F /* Products */,
+				024DEAAB499D2E5A6537EF92 /* Pods */,
+				A277732D852BBC375E1307FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,10 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				919607272A93B67D00914C0F /* Application */,
-				919607292A93B97400914C0F /* HomeViewController.swift */,
-				9196072D2A93B9DB00914C0F /* RegisterViewController.swift */,
-				9196072B2A93B9C300914C0F /* LoginViewController.swift */,
-				9196072F2A93BA0A00914C0F /* ForgotPasswordController.swift */,
+				917F34EB2A976BB600B63AFA /* Auth */,
+				910BDC472A9653D700D2764B /* Model */,
+				910BDC092A96056E00D2764B /* Controllers */,
 				91F0552E2A94E14300F54C3D /* View */,
 				91F055312A94E19E00F54C3D /* Helpers */,
 				919607282A93B69300914C0F /* SupportingFile */,
@@ -96,6 +159,7 @@
 			children = (
 				9196071C2A93B63200914C0F /* Assets.xcassets */,
 				9196071E2A93B63200914C0F /* LaunchScreen.storyboard */,
+				917F34E32A97432500B63AFA /* GoogleService-Info.plist */,
 				919607212A93B63200914C0F /* Info.plist */,
 			);
 			path = SupportingFile;
@@ -107,6 +171,7 @@
 				91F0552F2A94E16D00F54C3D /* AuthHeaderView.swift */,
 				91F055372A950B7E00F54C3D /* CustomTextField.swift */,
 				91F0553A2A95174C00F54C3D /* CustomButton.swift */,
+				910BDC072A95E3FB00D2764B /* WebViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,6 +179,7 @@
 		91F055312A94E19E00F54C3D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				910BDC0A2A96063B00D2764B /* AlertManager.swift */,
 				91F055352A94EB2500F54C3D /* Constant.swift */,
 				91F055342A94E1C600F54C3D /* UIkit */,
 			);
@@ -128,6 +194,14 @@
 			path = UIkit;
 			sourceTree = "<group>";
 		};
+		A277732D852BBC375E1307FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E385BB3A4A95FA49A4B5917 /* Pods_Login_in_system.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 919607242A93B63200914C0F /* Build configuration list for PBXNativeTarget "Login in system" */;
 			buildPhases = (
+				059D822C6E5B252228F3AE9B /* [CP] Check Pods Manifest.lock */,
 				9196070C2A93B62F00914C0F /* Sources */,
 				9196070D2A93B62F00914C0F /* Frameworks */,
 				9196070E2A93B62F00914C0F /* Resources */,
+				E637DF54103E7F3475B0A9C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +246,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 919607072A93B62F00914C0F;
 			productRefGroup = 919607112A93B62F00914C0F /* Products */;
@@ -187,11 +264,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				919607202A93B63200914C0F /* LaunchScreen.storyboard in Resources */,
+				917F34EF2A9772AE00B63AFA /* Localizable.strings in Resources */,
 				9196071D2A93B63200914C0F /* Assets.xcassets in Resources */,
+				917F34E42A97432500B63AFA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		059D822C6E5B252228F3AE9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Login in system-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E637DF54103E7F3475B0A9C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Login in system/Pods-Login in system-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Login in system/Pods-Login in system-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Login in system/Pods-Login in system-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9196070C2A93B62F00914C0F /* Sources */ = {
@@ -200,25 +321,41 @@
 			files = (
 				919607142A93B62F00914C0F /* AppDelegate.swift in Sources */,
 				91F055332A94E1AF00F54C3D /* UIView + Extensions .swift in Sources */,
+				917F34E62A97488800B63AFA /* LoginUserRequest.swift in Sources */,
 				91F055362A94EB2500F54C3D /* Constant.swift in Sources */,
+				910BDC492A96546500D2764B /* RegisterUserRequest.swift in Sources */,
 				919607162A93B62F00914C0F /* SceneDelegate.swift in Sources */,
 				91F055382A950B7F00F54C3D /* CustomTextField.swift in Sources */,
+				910BDC0B2A96063B00D2764B /* AlertManager.swift in Sources */,
 				919607302A93BA0A00914C0F /* ForgotPasswordController.swift in Sources */,
+				917F34EA2A97577A00B63AFA /* Validation.swift in Sources */,
 				9196072E2A93B9DB00914C0F /* RegisterViewController.swift in Sources */,
+				910BDC082A95E3FB00D2764B /* WebViewController.swift in Sources */,
 				91F0553B2A95174C00F54C3D /* CustomButton.swift in Sources */,
 				9196072C2A93B9C300914C0F /* LoginViewController.swift in Sources */,
 				9196072A2A93B97400914C0F /* HomeViewController.swift in Sources */,
 				91F055302A94E16D00F54C3D /* AuthHeaderView.swift in Sources */,
+				910BDC462A9652F000D2764B /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		917F34F12A9772AE00B63AFA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				917F34F02A9772AE00B63AFA /* en */,
+				917F34F22A9772B500B63AFA /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		9196071E2A93B63200914C0F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9196071F2A93B63200914C0F /* Base */,
+				917F34EE2A97726E00B63AFA /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -230,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -290,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -342,6 +481,7 @@
 		};
 		919607252A93B63200914C0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C77BFFA98D5AC51F15A21BED /* Pods-Login in system.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -350,6 +490,8 @@
 				DEVELOPMENT_TEAM = 9VPKL84SZ9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Login in system/SupportingFile/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Login System3";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -360,7 +502,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bezrukov.andrey.Login-in-system";
+				PRODUCT_BUNDLE_IDENTIFIER = "bezrukov.andrey.Login-in-system3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -373,6 +515,7 @@
 		};
 		919607262A93B63200914C0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4958920A47ED3FB1B7F21A86 /* Pods-Login in system.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -381,6 +524,8 @@
 				DEVELOPMENT_TEAM = 9VPKL84SZ9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Login in system/SupportingFile/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Login System3";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -391,7 +536,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bezrukov.andrey.Login-in-system";
+				PRODUCT_BUNDLE_IDENTIFIER = "bezrukov.andrey.Login-in-system3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
