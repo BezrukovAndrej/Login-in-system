@@ -1,0 +1,43 @@
+/* 
+  Localizable.strings
+  Login in system
+
+  Created by Andrey Bezrukov on 24.08.2023.
+  
+*/
+
+
+"Sign In"
+"Sign in to your account"
+"Username"
+"Email Address"
+"Password"
+"Sign In"
+"New User? Create Account."
+"Forgot Password?"
+"Sing Up"
+"Greate your account"
+"Already have an account? Sign In."
+                """
+                By creating an account,you agree to our Terms & Conditions
+                and you acknowledge that you have read our Privacy Policy.
+                """
+"Done"
+"Forgot Password"
+"Reset your password"
+"Loading..."
+"Logout"
+"Dismiss"
+"Invalid Email"
+"Please enter a valid email"
+"Invalid Password"
+"Please enter a valid password"
+"Invalid Username"
+"Please enter a valid username"
+"Unknown Registration Error"
+"Error Singing In"
+"Log Out Error"
+"Error Sending Password"
+"Password Reset Sent"
+"Error Fetchin User"
+"Unknown Error Fetching User"
