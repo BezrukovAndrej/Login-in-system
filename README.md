@@ -24,6 +24,7 @@ Application for user registration by e-mail.
 ## **Использовалось**
 - No storyboard, 100% Programmatic UI
 - Firebase
+- Localization
 
 
 ## Brief description of the application
@@ -41,3 +42,4 @@ The application consists of:
 ## **Used**
 - No storyboard, 100% Programmatic UI
 - Firebase
+- Localization
